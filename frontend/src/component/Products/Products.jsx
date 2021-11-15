@@ -3,9 +3,8 @@ import Product from './Product';
 import { ProductsContainer } from './style';
 import { getAllProducts } from '../../services/getProducts';
 
-const Products = (props) => {
+const Products = () => {
 	const [products, setProducts] = useState([]);
-	console.log(props.searchItem);
 
 	useEffect(() => {
 		getAllProducts().then((items) => {
